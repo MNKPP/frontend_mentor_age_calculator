@@ -1,0 +1,30 @@
+.displayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.displayContainer p {
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 52px;
+    font-style: italic;
+    margin: 0;
+    line-height: 3.8rem;
+}
+
+.displayContainer p span {
+    color: hsl(259, 100%, 65%);
+    margin-right: 0.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .displayContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

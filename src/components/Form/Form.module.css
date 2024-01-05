@@ -1,0 +1,46 @@
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.groupFormLabel {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    gap: 0.5ch;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.groupFormLabel input {
+    padding: 1ch 1ch 1ch 1.5ch;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.5ch;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    color: hsl(0, 0%, 8%);
+}
+
+.groupFormLabel input::placeholder {
+    color: red;
+}
+
+.groupFormLabel label {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+    .formContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

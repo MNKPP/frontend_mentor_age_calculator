@@ -1,0 +1,42 @@
+.buttonContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    z-index: 0;
+}
+
+.buttonContainer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background: hsl(259, 100%, 65%);
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.buttonContainer button:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    width: 100%;
+    top: 50%;
+    left: 0;
+}
+
+.buttonContainer button img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .buttonContainer {
+        justify-content: flex-end;
+    }
+}
